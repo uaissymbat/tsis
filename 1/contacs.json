@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Rei",
+    "email": "uais@gmail.com",
+    "birthday": null,
+    "group": "Family",
+    "phones": [
+      {
+        "phone": null,
+        "type": null
+      }
+    ]
+  },
+  {
+    "name": "Zere",
+    "email": "akzhainak@example.com",
+    "birthday": "1992-11-30",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77756661312",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "name": "Molya",
+    "email": "adiya@example.com",
+    "birthday": "1995-03-10",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77778888899",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Uais Symbat",
+    "email": "uais@example.com",
+    "birthday": "1990-05-15",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77776664455",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Symbat",
+    "email": "",
+    "birthday": null,
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "87555665542",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "name": "Arsen",
+    "email": "arsendolbaeb@gmail.com",
+    "birthday": null,
+    "group": null,
+    "phones": [
+      {
+        "phone": null,
+        "type": null
+      }
+    ]
+  }
+]

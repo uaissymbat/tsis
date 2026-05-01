@@ -274,4 +274,4 @@ class GameOverScreen:
                 return "retry"
             elif self.menu_button.is_clicked(event):
                 return "menu"
-        return None
+        return None 

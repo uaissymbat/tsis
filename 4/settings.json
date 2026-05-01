@@ -4,7 +4,7 @@
     255,
     0
   ],
-  "grid_overlay": false,
-  "sound": false,
-  "grid": true
+  "grid": true,
+  "sound": true,
+  "grid_overlay": false
 }

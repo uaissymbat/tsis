@@ -12,7 +12,6 @@ class Settings:
         self.settings = self.load_settings()
     
     def load_settings(self):
-        """Load settings from JSON file"""
         try:
             with open(self.filename, 'r') as f:
                 return json.load(f)
@@ -20,7 +19,6 @@ class Settings:
             return self.default_settings.copy()
     
     def save_settings(self):
-        """Save settings to JSON file"""
         with open(self.filename, 'w') as f:
             json.dump(self.settings, f, indent=4)
     

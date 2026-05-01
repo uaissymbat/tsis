@@ -1,3 +1,4 @@
+
 import json
 import os
 
@@ -9,7 +10,6 @@ class DataManager:
         self.load_leaderboard()
     
     def load_settings(self):
-        """Загружает настройки из файла"""
         default_settings = {
             "sound_enabled": True,
             "car_color": "purple",

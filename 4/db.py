@@ -8,7 +8,6 @@ class Database:
         self.use_postgres = False
         self.conn = None
         
-        # Try to import psycopg2
         try:
             import psycopg2
             self.psycopg2 = psycopg2
@@ -36,18 +35,15 @@ class Database:
                 self.init_json_storage()
     
     def init_json_storage(self):
-        """Initialize JSON file storage"""
         self.json_file = "game_data.json"
         if not os.path.exists(self.json_file):
             with open(self.json_file, 'w') as f:
                 json.dump({"players": {}, "sessions": []}, f)
     
     def create_tables(self):
-        """Create tables if they don't exist"""
         if not self.conn:
             return
             
-        # Create players table
         self.cur.execute("""
             CREATE TABLE IF NOT EXISTS players (
                 id SERIAL PRIMARY KEY,
@@ -55,7 +51,6 @@ class Database:
             )
         """)
         
-        # Create game_sessions table
         self.cur.execute("""
             CREATE TABLE IF NOT EXISTS game_sessions (
                 id SERIAL PRIMARY KEY,
@@ -69,7 +64,6 @@ class Database:
         self.conn.commit()
     
     def get_or_create_player(self, username):
-        """Get existing player or create new one"""
         if not self.use_postgres:
             return self.json_get_or_create_player(username)
             
